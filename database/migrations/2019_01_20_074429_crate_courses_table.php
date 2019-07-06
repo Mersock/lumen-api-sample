@@ -18,7 +18,7 @@ class CrateCoursesTable extends Migration
             $table->string('description');
             $table->integer('value')->unsigned();
             $table->integer('student_id')->unsigned();
-            $table->foreign('student_id')->references('id')->on('student_id');
+//            $table->foreign('student_id')->references('id')->on('student_id');
             $table->timestamps();
         });
     }
