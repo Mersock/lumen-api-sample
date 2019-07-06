@@ -4,7 +4,7 @@
 
 Usage
 
-1.git clone
+1.git clone https://github.com/Mersock/lumen-api-simple.git
 
 2.docker-compose up -d
 
