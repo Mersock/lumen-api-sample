@@ -1,0 +1,30 @@
+version: '3'
+services:
+  web:
+    build: ./
+    container_name: lumen_train
+    restart: always
+    networks: 
+      - default
+    volumes:
+      - ./:/var/www/html
+    ports:
+      - 80:80
+  
+  mysql:
+    image: mariadb:10.3
+    container_name: lumen_train_db
+    restart: always
+    networks: 
+      - default
+    ports:
+      - 3306:3306
+    environment:
+      - "MYSQL_DATABASE=lumen_train"
+      - "MYSQL_USER=root"
+      - "MYSQL_PASSWORD=root"
+      - "MYSQL_ROOT_PASSWORD=root"
+
+networks: 
+  default:
+    driver: bridge
