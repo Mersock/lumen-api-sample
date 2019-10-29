@@ -8,8 +8,8 @@ Usage
 
 2.docker-compose up -d
 
-3.docker exec -it lumen_train composer install
+3.docker exec -it lumen_training composer install
 
-4.docker exec -it lumen_train php artisan migrate
+4.docker exec -it lumen_training php artisan migrate
 
-5.docker exec -it lumen_train php artisan db:seed
+5.docker exec -it lumen_training php artisan db:seed
