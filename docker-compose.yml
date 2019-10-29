@@ -2,7 +2,7 @@ version: '3'
 services:
   web:
     build: ./
-    container_name: lumen_train
+    container_name: lumen_training
     restart: always
     networks: 
       - default
@@ -13,7 +13,7 @@ services:
   
   mysql:
     image: mariadb:10.3
-    container_name: lumen_train_db
+    container_name: lumen_training_db
     restart: always
     networks: 
       - default
